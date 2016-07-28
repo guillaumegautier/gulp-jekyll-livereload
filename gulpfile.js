@@ -12,6 +12,6 @@ gulp.task('build-jekyll', function (gulpCallBack) {
 		});
 	});
 
-gulp.task('default', function() {
+gulp.task('default', 'build-jekyll', function() {
 	livereload.listen();
 	});
